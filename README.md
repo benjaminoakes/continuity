@@ -15,4 +15,4 @@ Requirements
 Example
 -------
 
-See `application.js` for a simple example.
+See `application.js` (and `index.html`) for a simple example.

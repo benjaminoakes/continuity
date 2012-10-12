@@ -18,12 +18,12 @@
  */
 var external, continuity;
 
-continuity = (function () {
+continuity = (function (global, undefined) {
   function ready(opts, success, error) {
     var unity;
     
     try {
-      unity = external.getUnityObject(1.0);
+      unity = global.external.getUnityObject(1.0);
       opts.onInit = function () { success(unity) };
       unity.init(opts);
     } catch (e) {
@@ -34,4 +34,4 @@ continuity = (function () {
   return {
     ready: ready
   };
-}());
+}(window));

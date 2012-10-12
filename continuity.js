@@ -24,10 +24,10 @@ continuity = (function (global, undefined) {
     
     try {
       unity = global.external.getUnityObject(1.0);
-      opts.onInit = function () { success(unity) };
+      opts.onInit = function () { success(unity); };
       unity.init(opts);
     } catch (e) {
-      error && error(e);
+      if (error) error(e);
     }
   }
 

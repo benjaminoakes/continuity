@@ -21,7 +21,7 @@ continuity.ready({ name: 'StackOverflow' }, function (unity) {
 
 // ## GitHub
 //
-// There doesn't seem to be an API for notifications.  [This Chrome extension](https://github.com/pedromenezes/GitHub-Inbox/blob/master/src/background.js) scrapes.
+// There's a new API for notifications.  It requires authentication.  See https://github.com/blog/1306-notifications-api
 continuity.ready({ name: 'GitHub' }, function (unity) {
   unity.MessagingIndicator.showIndicator('Notifications', { count: 3 });
 });
